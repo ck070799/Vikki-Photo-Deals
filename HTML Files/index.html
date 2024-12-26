@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #lang{
+        height: 2.125rem;
+padding: 0 1.25em;
+font-size: 15px;
+width: 100%;
+border: 2px solid black;
+border-radius: 5px;
+outline: none;
+/* border-top-right-radius: 0; */
+/* border-bottom-right-radius: 0; */
+    }
+        .dropbtn {
+          /* background-color: #04AA6D; */
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+            margin-top: 16px;
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        /* .dropdown:hover .dropbtn {} */
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .main-banner, .side-banner {
+            box-sizing: border-box;
+            margin-top: 20px;
+            padding: 0px;
+        }
+        .main-banner {
+            flex: 2;
+            /* background-color: #111; */
+            position: relative;
+            text-align: left;
+            margin-left: 50px;
+        }
+        .main-banner img {
+            width: 95%;
+            height: 95%;
+        }
+        .side-banner {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: 60px;
+        }
+        .side-banner img {
+            width: 100%;
+            height: 500px;
+            margin-bottom: 20px;
+        }
+        .content {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .content h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .content p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .content .shop-now {
+            background-color: pink;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 420px 0 0 685px;
+            cursor: pointer;
+        }
+    
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logonew1.png" class="logo" alt="Vikki Photo Deals" ></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <!-- <li><a href="comingsoon.html">Community</a></li> -->
+                <li><a href="about.html">About</a></li>
+                <li><a href="#lda">Contact</a></li>
+                <!-- <li><a href="app.html">App</a></li> -->
+                <!-- <li><a href="app.html">Sign-Up</a></li> -->
+                <li><select name="" id="lang">
+                    <option value="" disabled selected hidden>Language</option>
+                    <option value="1">English</option>
+                    <option value="2">ಕನ್ನಡ</option>
+                    <option value="3">हिंदी</option>
+                    <option value="4">తెలుగు</option></select></li>
+                    <div class="dropdown">
+                        <li><a href="app.html" class="dropbtn"><img src="img/user.png" alt="" id="userp" style="height: 25px; width:25px"></a>
+                        
+                            <div class="dropdown-content" style="float: left;">
+                                <!-- <a href="" style="color: rgb(4, 137, 86); margin-bottom: 3px;"><b>S</b></a> -->
+                                <a href="signup.html">Sign-Up</a>
+                                <a href="signin.html">Log-In</a>
+                              </div></li></div>
+                <!-- <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li> -->
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <!--<section id="hero">
+        
+        <h2>Capture every moment with top brands</h2>
+        <h1>at your one-stop camera shop.</h1> 
+        
+       <a href="#product1"> <button id="butt"><span>Explore</span></button></a>
+    </section>-->
+    <div class="container">
+        <div class="main-banner">
+            <div class="content">
+                <!-- <h1>Must-Haves<br>SAMYANG LENSES</h1>
+                <p>SALE UPTO 10% OFF</p>
+                <p>* Get Plus Discount Buying Lenses</p> -->
+                <a href="#product1" ><button class="shop-now"><span> SHOP NOW →</span></button></a>
+            </div>
+            <img src="img/instax.jpg" alt="Samyang Lenses">
+        </div>
+        <div class="side-banner">
+            <a href="#"><img src="img/action3.jpg  " alt="Accessories"><br>
+            <!-- <span>Accessories</span><br>
+            <span>486 PRODUCTS</span></a>
+            <a href="#"><img src="https://your-image-url.com/samyang.jpg" alt="Samyang"><br>
+            <span>Samyang</span><br>
+            <span>124 PRODUCTS</span></a> -->
+        </div>
+    </div>
+
+    <section id="company" class="section-p1">
+        <h2>AUTHORISED DEALER</h2>
+    </section>
+
+    <section id="feature" class="section-p1">
+        
+        <div class="febox">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news" src="img/nikon1.png" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+        <div class="febox">
+            <a href="https://www.nabard.org/news-article.aspx?id=25&cid=552&nid=160" target="_blank"><img id="mon" src="img/canon1.webp" alt="" ></a>
+            <!-- <h6>Canon</h6> -->
+        </div>
+        <div class="febox">
+            <a href="https://www.accuweather.com/en/in/bengaluru/204108/weather-forecast/204108" target="_blank"><img id="weather" src="img/sony3.png" alt="" ></a>
+            <!-- <h6>Sony</h6> -->
+        </div>
+        
+        <div class="febox">
+            <img id="sup" src="img/Fujifilm-logo.png" alt="" href="">
+            <!-- <h6>FujiFilm</h6> -->
+        </div>
+
+        <div class="febox">
+            <img id="sup" src="img/panasonic logo 1.png" alt="" href="">
+            <!-- <h6>FujiFilm</h6> -->
+        </div>
+    </section>
+
+    <section id="feature1" class="section-p1">
+        
+        <div class="febox1">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news1" src="img/dji1.jpg" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://www.nabard.org/news-article.aspx?id=25&cid=552&nid=160" target="_blank"><img id="mon1" src="img/sigma.jpg" alt="" ></a>
+            <!-- <h6>Canon</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://www.accuweather.com/en/in/bengaluru/204108/weather-forecast/204108" target="_blank"><img id="weather1" src="img/tamron1.jpg" alt="" ></a>
+            <!-- <h6>Sony</h6> -->
+        </div>
+        
+        <div class="febox1">
+            <img id="sup1" src="img/samyang3.jpg" alt="" href="">
+            <!-- <h6>FujiFilm</h6> -->
+        </div>
+
+        <div class="febox1">
+            <img id="sup1" src="img/godox.jpg" alt="" href="">
+            <!-- <h6>FujiFilm</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news1" src="img/viltrox1.jpg" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news1" src="img/digitek4.jpg" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news1" src="img/simpex1.jpg" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news1" src="img/welborn3.jpg" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news1" src="img/prolite1.jpg" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+    </section>
+
+    <section id="feature1" class="section-p1">
+        
+        <div class="febox1">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news1" src="img/gopro2.jpg" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://www.nabard.org/news-article.aspx?id=25&cid=552&nid=160" target="_blank"><img id="mon1" src="img/hiffin1.jpg" alt="" ></a>
+            <!-- <h6>Canon</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://www.accuweather.com/en/in/bengaluru/204108/weather-forecast/204108" target="_blank"><img id="weather1" src="img/ulanzi1.jpg" alt="" ></a>
+            <!-- <h6>Sony</h6> -->
+        </div>
+        
+        <div class="febox1">
+            <img id="sup1" src="img/kodak.jpg" alt="" href="">
+            <!-- <h6>FujiFilm</h6> -->
+        </div>
+
+        <div class="febox1">
+            <img id="sup1" src="img/insta1.jpg" alt="" href="">
+            <!-- <h6>FujiFilm</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news1" src="img/moza.jpg" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news1" src="img/feiyu.jpg" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news1" src="img/boya2.jpg" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news1" src="img/rode1.jpg" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+        <div class="febox1">
+            <a href="https://economictimes.indiatimes.com/topic/farmers" target="_blank"><img id="news1" src="img/andbon1.jpg" alt="" ></a>
+            <!-- <h6>Nikon</h6> -->
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Explore the range</p>
+        <div class="pro-container">
+            <div class="pro">
+                <a href="product.html"><img src="img/camera4.jpg" alt="" ></a>
+                <div class="des">
+                    
+                    <h5>Camera</h5>
+                    
+                    
+                </div>
+                <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+            </div>
+            <div class="pro">
+                <a href="lens.html"><img src="img/lens1.jpg" alt=""></a>
+                <div class="des">
+                    
+                    <h5>Lens</h5>
+                    
+                    
+                </div>
+                <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+            </div>
+            <div class="pro">
+               <a href="tripod.html"> <img src="img/tripod2.jpg" alt=""></a>
+                <div class="des">
+                    
+                    <h5>Tripods</h5>
+                    
+                </div>
+                <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+            </div>
+            <div class="pro">
+                <a href="gimbal.html"><img src="img/gimbal1.jpg" alt="" style="height: 290px;"></a>
+                <div class="des">
+                    
+                    <h5>Gimbals</h5>
+                    
+                </div>
+                <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+            </div>
+            <div class="pro">
+               <a href="actioncam.html"><img src="img/actioncam1.jpg" alt=""></a> 
+                <div class="des">
+                    
+                    <h5>Action Camera</h5>
+                    
+                </div>
+                <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+            </div>
+            <div class="pro">
+               <a href="mics.html"> <img src="img/mic.jpg" alt=""></a>
+                <div class="des">
+                    
+                    <h5>Microphones</h5>
+                    
+                </div>
+                <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+            </div>
+            <div class="pro">
+               <a href="studiolights.html"> <img src="img/lights.jpg" alt="" style="height: 290px;"></a>
+                <div class="des">
+                    
+                    <h5>Studio Lights</h5>
+                    
+                </div>
+                <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+            </div>
+            <div class="pro">
+                <a href="sdcard.html"> <img src="img/sdcard2.jpg" alt=""></a>
+                <div class="des">
+                    
+                    <h5>SD Cards</h5>
+                    
+                </div>
+                <!-- <a href="#"><i class="fal fa-shopping-cart cart"></i></a> -->
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="banner" class="section-m1">
+        <h2 style="color: whitesmoke;" style="margin-left: -200px;">Discount on Select Products</h2>
+       <a href="agricom.html"> <button class="normal">Explore more</button></a>
+    </section>
+
+    
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+        <h2 style="color: rgb(150, 232, 241);">Printers</h2>
+        <h3 style="color: whitesmoke;">All Printing Solutions</h3>
+        
+        <!-- <button class="white" style="margin-top: 20px;"><a href="community.html">Learn More</a></button> -->
+    </div>
+    <div class="banner-box banner-box2">
+        <h2 style="color: rgb(150, 232, 241);">Accessories</h2>
+        <h3 style="color:whitesmoke;">Camera Bags, Batteries and Much More ...</h3>
+        
+        <!-- <button class="white"  style="margin-top: 20px;"><a href="finance.html">Learn More</a></button> -->
+    </div>
+    </section>
+    
+    
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Queries</h4>
+            <p>Get E-mails about our latest <span>updates.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1" id="lda">
+        <div class="col">
+            <img src="img/logonew1.png" class="logo" alt="" >
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 40/78, Hospital Road, Parade, Kanpur, U.P.</p>
+            <p><strong>Phone:</strong> +91-9335092243 </p>
+            <p><strong>Hours:</strong> 09:00 - 21:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <!-- <a href="#">Delivery Information</a> -->
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App </h4>
+            <h4>Coming Soon! </h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/app1.jpg" alt="">
+                <img src="img/play1.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay1.png" alt="">
+            <p>Coming Soon</p>
+        </div>
+        <div class="copyright">
+            <p>Vikki Photo Deals.  </p>
+            <p> All Copyrights Reserved &copy; 2024 </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
